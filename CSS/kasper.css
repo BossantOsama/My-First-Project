@@ -221,6 +221,7 @@ header .container nav .form input:focus {
     top: 70px;
     left: 5%;
     width: 90%;
+    z-index: 1000;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
