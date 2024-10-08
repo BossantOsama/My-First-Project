@@ -7,7 +7,7 @@ let list = document.querySelector("header .container nav ul");
 let right = document.querySelector(".landing .overlay .right");
 let left = document.querySelector(".landing .overlay .left");
 let bulltes = document.querySelectorAll(".landing .overlay .bulltes li");
-let landing = document.querySelector(".landing");
+let landingImage = document.querySelector(".landing .overlay img");
 let cat = document.querySelectorAll(".portfolio .container ul li");
 let imgsContainer = document.querySelector(".portfolio .imgs-container");
 let imgs = document.querySelectorAll(".portfolio .imgs-container .box");
@@ -83,7 +83,7 @@ function changeBackground() {
   if (current === -1) {
     current = 2;
   }
-  landing.style.backgroundImage = `url('../images/${myPhotos[current]}')`;
+  landingImage.src = `images/${myPhotos[current]}`;
   bulltes.forEach((li) => {
     li.classList.remove("active");
   });
@@ -95,9 +95,7 @@ bulltes.forEach((li) => {
       li.classList.remove("active");
     });
     li.classList.add("active");
-    landing.style.backgroundImage = `url('../images/${
-      myPhotos[+li.dataset.num]
-    }')`;
+    landingImage.src = `images/${myPhotos[+li.dataset.num]}`;
   };
 });
 cat.forEach((li) => {
