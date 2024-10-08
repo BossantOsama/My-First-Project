@@ -43,8 +43,10 @@ window.onresize = function () {
 searchBtn.onclick = () => {
   if (window.innerWidth <= 499) {
     list.classList.remove("active");
+    searchBar.classList.toggle("active");
+  } else {
+    searchBar.classList.toggle("active");
   }
-  searchBar.classList.toggle("active");
   if (searchBar.classList.contains("active")) {
     form.style.borderLeftColor = "transparent";
     searchBar.focus();
