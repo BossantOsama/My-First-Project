@@ -14,7 +14,7 @@ let imgs = document.querySelectorAll(".portfolio .imgs-container .box");
 let changerComment = document.querySelectorAll(
   ".our-skills .container .testimonianls ul li"
 );
-let myPhotos = ["background1.jpg", "background2.jpeg", "background3.jpg"];
+let myPhotos = ["background1.jpg", "background2.jpg", "background3.jpg"];
 let comments = [
   "comment1.jpg",
   "comment2.jpg",
