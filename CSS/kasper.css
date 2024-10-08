@@ -167,7 +167,7 @@ header .container nav ul li a:hover {
     flex-direction: column;
     top: 64px;
     left: 0;
-    padding: 10px;
+    padding: 10px 20px;
     position: absolute;
     width: 100%;
   }
@@ -216,11 +216,15 @@ header .container nav .form input:focus {
   outline: none;
 }
 @media (max-width: 499px) {
+  header .container nav .form {
+    position: relative;
+  }
   header .container nav .form input.active {
     position: absolute;
     top: 70px;
-    left: 5%;
-    width: 90%;
+    /* left: 5%; */
+    left: -260px;
+    width: 300px;
     z-index: 1000;
   }
 }
