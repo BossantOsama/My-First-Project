@@ -216,15 +216,11 @@ header .container nav .form input:focus {
   outline: none;
 }
 @media (max-width: 499px) {
-  header .container nav .form {
-    position: relative;
-  }
   header .container nav .form input.active {
     position: absolute;
     top: 70px;
-    /* left: 5%; */
-    left: -260px;
-    width: 300px;
+    left: 5%;
+    width: 90%;
     z-index: 1000;
   }
 }
